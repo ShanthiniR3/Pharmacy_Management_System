@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pharmacy Management System - Customer Login</title>
+  <link href="styles.css" rel="stylesheet" type="text/css">
+  <script src="pharmacists.js" defer></script>
+  <script>
+    function handleSubmit(event) {
+      event.preventDefault();
+      
+      const username = document.getElementById('username').value;
+      const password = document.getElementById('password').value;
+      
+      if (authenticateUser(username, password)) {
+        alert('Login successful!');
+        // Redirect or do something else after successful login
+      } else {
+        alert('Invalid username or password');
+      }
+    }
+  </script>
+</head>
+<body>
+  <div class="container">
+    <h2>Pharmacy Management System - Pharmacists Login</h2>
+    <form onsubmit="handleSubmit(event)">
+      <div class="input-group">
+        <label for="username">Username</label>
+        <input type="text" id="username" name="username" required>
+      </div>
+      <div class="input-group">
+        <label for="password">Password</label>
+        <input type="password" id="password" name="password" required>
+      </div>
+      <button type="submit">Login</button>
+    </form>
+    <p>New User? <a href="signup.html">Sign Up</a></p>
+    <button id="goHomeButton">Go to Home Page</button>
+  </div>
+</body>
+</html>

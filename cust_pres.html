@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Prescription Upload</title>
+  <link rel="stylesheet" href="prescription.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Prescription Upload</h1>
+    <form id="prescriptionForm">
+      <label for="userName">User Name:</label>
+      <input type="text" id="userName" required><br>
+
+      <label for="physicianName">Physician Name:</label>
+      <input type="text" id="physicianName" required><br>
+
+      <label for="date">Date:</label>
+      <input type="date" id="date" required><br>
+
+      <label for="clinicName">Clinic/Hospital Name:</label>
+      <input type="text" id="clinicName" required><br>
+
+      <label for="medicines">Medicines:</label>
+      <textarea id="medicines" rows="4" required></textarea><br>
+
+      <button type="submit">Upload prescription</button>
+    </form>
+
+    <p id="verificationResult"></p>
+
+    <button id="goHomeButton">Go to Home Page</button>
+  </div>
+
+  <script src="cust_pres.js"></script>
+</body>
+</html>

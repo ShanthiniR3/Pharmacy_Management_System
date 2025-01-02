@@ -1,0 +1,83 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: hsl(240, 4%, 95%);
+    margin: 0;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-image: url('pharmacy_bg.jpg');
+  background-size: cover;
+  background-position: center;
+  }
+  
+  .container {
+    width: 75vw;
+    max-width: 800px; /* Optional: Add a max-width for larger screens */
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  }
+  
+  .container h2 {
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  
+  .input-group {
+    display: grid;
+    grid-template-columns: 120px 1fr;
+    grid-gap: 10px;
+  }
+  
+  .input-group label {
+    text-align: right;
+    padding-right: 10px;
+    line-height: 32px;
+  }
+  
+  .input-group input,
+  .input-group textarea {
+    width: 100%;
+    padding: 8px;
+    font-size: 16px;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+  }
+  
+  button {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    background-color: #0056b3;
+  }
+  
+  /* Password strength message */
+  .password-strength-text {
+    margin-top: 5px;
+    color: #ff6347;
+  }
+  
+  /* Responsive Design */
+  @media screen and (max-width: 560px) {
+    .input-group {
+      grid-template-columns: 1fr;
+    }
+  
+    .input-group label {
+      text-align: left;
+      padding-right: 0;
+    }
+  }
+  

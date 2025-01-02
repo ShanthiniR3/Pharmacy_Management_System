@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Customer Home - Pharmacy Management System</title>
+  <link href="customer_home.css" rel="stylesheet" type="text/css">
+  <script src="customer_home.js" defer></script>
+</head>
+<body>
+  <header>
+    <h1>Welcome, Customer!</h1>
+    <nav>
+      <ul>
+        <li><a href="cust_pres.html" onclick="toggleSection('presc')">Upload prescription</a></li>
+        <li><a href="patientpres.html" onclick="toggleSection('search')">Search Medicine</a></li>
+        
+        <li><a href="#" onclick="toggleSection('orders')">View Orders</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section id="search" style="display: none;">
+    <h2>Search Medicine</h2>
+    <ul id="medicineList"></ul>
+  </section>
+
+  <section id="presc" style="display: none;">
+    <h2>Prescription upload</h2>
+   
+  </section>
+
+  <section id="orders" style="display: none;">
+    <h2>Previous Orders</h2>
+    <!-- Display a list of previous orders here -->
+  </section>
+
+  <section id="upload" style="display: none;">
+    <h2>Prescription List</h2>
+    <form id="prescriptionForm">
+      <ul id="selectedMedicines"></ul>
+      <button type="submit">Submit</button>
+    </form>
+  </section>
+  <!-- Popup window for success message -->
+<div class="popup" id="successPopup">
+  <div class="popup-content">
+    <span class="close" id="closePopupBtn">&times;</span>
+    <p>The selected medicines is/are requested to the pharmacists.</p>
+    <p>Pharmacists will verify these medicine availability and will inform you through SMS or email.</p>
+  </div>
+
+</div>
+<button id="goHomeButton">Go to Home Page</button>
+
+
+  <footer>
+    <p>&copy; 2024 Pharmacy Management System</p>
+  </footer>
+</body>
+</html>
